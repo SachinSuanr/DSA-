@@ -13,8 +13,13 @@ int main(){
     int x,f;
     printf("Enter the number: ");
     scanf("%d",&x);
-    f=fibonaaci(x);
-    printf("The fibonacci sum is: %d",f);
+   
+    printf("Fibonacci sequence:\n");
+    for (int i = 1; i <= x; i++) {
+        f = fibonaaci(i);
+        printf("%d ", f);
+    }
+
 
     return 0;
 }

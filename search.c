@@ -16,7 +16,7 @@ int main(){
         printf("Number lies in the array.");
     }
     else{
-        printf("Nuber doesnot lies in the array.");
+        printf("Number doesnot lies in the array.");
     }
     return 0;
     
