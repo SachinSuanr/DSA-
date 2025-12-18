@@ -5,6 +5,8 @@ int main()
 {
     int Arr[]={2,8,7,4,5,9,6};
     int n=7,temp;
+
+    printf("Bubble sorting.\n");
     printf("Before sorting.\n");
     for(int i=0;i<n;i++)
     {

@@ -5,6 +5,7 @@ int main()
 {
     int arr[]={2,5,8,9,11,15,19,20,25},left=0,right=8,mid,key,found=0;
 
+    printf("Binary searching.\n");
     printf("Enter the value of the key: ");
     scanf("%d",&key);
 
