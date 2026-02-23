@@ -11,7 +11,7 @@ int main()
 
     while (left<=right)
     {
-        mid = (left+right)/2;
+        mid = left + (right-left) / 2;
         if (arr[mid] == key)
         {
             found = 1;
