@@ -1,68 +1,75 @@
-# include<stdio.h>
-int maxsize = 5;
-int top = -1;
-int stack[5];
 
-void PUSH(){
-    if(top == maxsize - 1){
-        printf("Stack is overflow\n");
-    }
-    else{
-        top++;
-        printf("Enter the stack......\n");
-        scanf("%d ",&stack[top]);
-        printf("The stack is %d.\n",stack[top]);
-    }
+
+#include<stdio.h>
+ int sort[5];
+ int max=5;
+ int top=-1;
+ 
+ void push(){
+ 	if (top==max-1){
+ 		printf("Stack overflow\n");
+	 }
+	 else{
+	 	top++;
+	 	printf("Insert number ");
+	 	scanf("%d",&sort[top]);
+	 	printf(" The stack is %d  \t \n",sort[top]);
+	 }
+ }
+ 
+  void pop(){
+ 	if (top==-1){
+ 		printf("\n Stack underflow");
+	 }
+	 else{
+	 	printf("One element is deleted\n");
+	 	top--;
+	 }
+ }
+ 
+  
+  void show(){
+  	int i;
+ 	if (top==-1){
+ 		printf("\n Stack is empty");
+	 }
+	 else{
+	 	for(i=top; i>=0;i-- )
+	 	printf("The remaining stack is %d \t \n",sort[i]);
+	 }
 }
 
-void POP(){
-    if(top == -1){
-        printf("Stack is underflow.\n");
-    }
-    else{
-        top--;
-        printf("Remove stack......\n");
-        printf("The removed stack is %d.",stack[top]);
-    }
-}
-
-void SHOW(){
-    if(top == -1){
-        printf("Stack is empty.");
-    }
-    else{
-        for(int i = top;i >= 0;i++){
-            printf("The stack are %d.", stack[i]);
-        }
-    }
-}
 int main(){
-    int choice;
-    do{
-        printf("\n1. Insert");
-		printf("\n2, Delete ");
-		printf("\n3. Show");
-		printf("\n4. Exit");
-		printf("\n What to do.\n");
-		scanf("%d" ,&choice);
+	int counter;
+	do{
+		printf("\n press 1 To push \t");
+		printf(", 2 To pop \t");
+		printf(", 3 To show \t");
+		printf(", 4 To exit \t");
+		scanf("%d",&counter);
 		
-		if(choice == 1){
-			PUSH();
-		}
-		else if(choice == 2){
-			POP();
-		}
-		else if(choice == 3){
-			SHOW();
-		}
-		else if(choice == 4){
-			printf("\n END");
-		}
-		else{
-			printf("\nInvalid ");
-		}
-	}
-	while(choice != 4);
+		if(counter==1)
+		push();
+		
+		else if(counter==2)
+		pop();
+		
+		else if(counter==3)
+		show();
+		
+		else if(counter==4)
+		printf("\n Program end");
+		
+		else
+		printf("\n Invalid");
+		
+	}while(counter!=4);
+	
 
-    return 0;
+	
 }
+
+
+
+
+
