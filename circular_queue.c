@@ -49,7 +49,7 @@ void SHOW(){
             printf("%d", CQUEUE[i]);
             i = (i + 1) % MAXSIZE;
         }
-        printf("The remaining queue is: ");
+        printf("The required queue elements are: ");
         printf("%d\n",CQUEUE[REAR]);
     }
 }
