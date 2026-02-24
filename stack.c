@@ -41,11 +41,9 @@
 
 int main(){
 	int counter;
+	printf(".............Stack...........\n");
 	do{
-		printf("\n press 1 To push \t");
-		printf(", 2 To pop \t");
-		printf(", 3 To show \t");
-		printf(", 4 To exit \t");
+		printf("1.Insert  2.Delete  3.Show   4.Exit   What to do => ");
 		scanf("%d",&counter);
 		
 		if(counter==1)
