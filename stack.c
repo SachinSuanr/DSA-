@@ -1,19 +1,19 @@
 
 
 #include<stdio.h>
- int sort[5];
- int max=5;
+ int stack[5];
+ int maxsize=5;
  int top=-1;
  
  void push(){
- 	if (top==max-1){
+ 	if (top==maxsize-1){
  		printf("Stack overflow\n");
 	 }
 	 else{
 	 	top++;
 	 	printf("Insert number ");
-	 	scanf("%d",&sort[top]);
-	 	printf(" The stack is %d  \t \n",sort[top]);
+	 	scanf("%d",&stack[top]);
+	 	printf(" The stack is %d  \t \n",stack[top]);
 	 }
  }
  
@@ -35,7 +35,7 @@
 	 }
 	 else{
 	 	for(i=top; i>=0;i-- )
-	 	printf("The remaining stack is %d \t \n",sort[i]);
+	 	printf("The remaining stack is %d \t \n",stack[i]);
 	 }
 }
 
