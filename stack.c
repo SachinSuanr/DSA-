@@ -17,7 +17,7 @@
 	 }
  }
  
-  void pop(){
+  void pop(){ 
  	if (top==-1){
  		printf("\n Stack underflow");
 	 }
@@ -32,11 +32,14 @@
   	int i;
  	if (top==-1){
  		printf("\n Stack is empty");
-	 }
+	}
 	 else{
-	 	for(i=top; i>=0;i-- )
-	 	printf("The remaining stack is %d \t \n",stack[i]);
-	 }
+		printf("The remaining stack is: ");
+	 	for(i=top; i>=0;i-- ){
+			printf("%d ",stack[i]);
+		}
+		printf("\n");
+	}
 }
 
 int main(){
